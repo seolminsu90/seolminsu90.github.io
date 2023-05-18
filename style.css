@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "consolas";
+    box-sizing: border-box;
+}
+
+body {
+    width: 210mm;
+    /* A4 가로 너비 */
+    margin: 0 auto;
+    background: rgb(248, 248, 248);
+}
+
+#ms-portpolio,
+#ms-career-text,
+#ms-exp,
+#ms-career {
+    display: none;
+}
+
+.page-wrap {
+    background: #fff;
+}
+
+.page {
+    width: 100%;
+    /*height: 297mm; 
+    Print 할때만 확인. 넘으면 콘텐츠 크기를 조절하던지 다음 page로 넘겨야한다.*/
+    padding: 20px;
+    page-break-after: always;
+    /* 페이지 끝날 때마다 개행 */
+}
+
+.page+.line {
+    display: block;
+}
+
+.x-button {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    margin: 0.3rem;
+    display: none;
+}
+
+.parent-x-button {
+    float: right;
+}
+
+.x-button:hover {
+    color: rgb(223, 82, 0);
+}
+
+/*슬라이더*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.slide img.horizontal {
+    width: 50%;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* 히든 */
+.hidden-command {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+}
+
+.hidden-command p {
+    display: none;
+    font-size: 0.7rem;
+    color: red;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slide-off .slider {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.slide-off .slide {
+    flex: 0 0 33.333333%;
+    padding: 5px;
+}
+
+.slide-off .prev-button,
+.slide-off .next-button {
+    display: none;
+}
+
+/* common */
+.w30 {
+    width: 30%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+ul,
+li {
+    list-style: none;
+    position: relative;
+}
+
+li {
+    word-break: break-all;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.introduce {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+ul.bootstrap-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.bootstrap-list>li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5em;
+}
+
+ul.bootstrap-list>li:before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    width: 0.75em;
+    height: 0.75em;
+}
+
+/* text */
+b {
+    color: rgb(72, 17, 145);
+}
+
+.title {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.company-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company-level {
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+    margin-bottom: 0px;
+}
+
+.company-date {
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+    margin-bottom: 5px;
+}
+
+.company-work {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.company-tag,
+.project-tag {
+    margin-top: 7px;
+    font-size: 12px;
+    color: rgb(18, 117, 134);
+    font-weight: bold;
+}
+
+.project-tag {
+    font-size: 12px;
+}
+
+/* grid */
+.pl10 {
+    padding-left: 10px;
+}
+
+.section-career .container {
+    display: flex;
+    height: auto;
+}
+
+.section-career .left-space {
+    flex-basis: 90px;
+    padding: 10px;
+}
+
+.section-career .left-space img {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.section-career .right-spaces {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% - 90px);
+}
+
+.section-career .right-space {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.section-career .right-space:nth-of-type(1) {
+    padding-bottom: 0;
+}
+
+.section-career .right-spaces {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.portpolio-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.portpolio-wrap>div:not(.x-button) {
+    flex: 0 0 40%;
+}
+
+.portpolio-wrap>div:not(.x-button):last-child {
+    flex: 0 0 60%;
+}
+
+.project-title-wrap {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-title {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.project-date {
+    color: #888;
+    font-size: 12px;
+}
+
+.project-name {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.project-desc {
+    font-size: 12px;
+    line-height: 19px;
+    padding: 7px 0 12px 0;
+}
+
+.career-period {
+    margin-bottom: 15px;
+}
+
+.career-period-date {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.career-period-list {
+    margin: 10px 0;
+}
+
+.career-period-list li {
+    font-size: 13px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+    display: none;
+}
+
+.skill {
+    width: 3y0px;
+    height: 20px;
+}
+
+@media print {
+    .line {
+        display: none;
+    }
+
+    .introduce {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
