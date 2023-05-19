@@ -3,7 +3,7 @@
     height: 120px;
     position: relative;
     border-bottom: 1px solid #000;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .area {
@@ -57,7 +57,7 @@
 .area p {
     position: absolute;
     top: -30px;
-    left: -.5px;
+    left: -0.5px;
     height: 31px;
     font-size: 10px;
     white-space: nowrap;
@@ -68,7 +68,7 @@
 .tick,
 .year {
     position: absolute;
-    font-size: 4px !important;
+    font-size: 8px !important;
     text-align: center;
     bottom: -15px;
     -webkit-text-size-adjust: none;
@@ -79,13 +79,12 @@
 
 .tick {
     height: 15px;
-    border-left: 1px solid black;
-    transform: translateX(-50%);
+    border-left: 1px solid #000;
 }
 
 .year {
     color: #bbb;
-    text-indent: 5px;
+    text-indent: 8px;
 }
 
 @media print {

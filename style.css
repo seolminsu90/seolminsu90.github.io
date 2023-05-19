@@ -32,7 +32,7 @@ body {
     /* 페이지 끝날 때마다 개행 */
 }
 
-.page+.line {
+.page + .line {
     display: block;
 }
 
@@ -84,17 +84,24 @@ body {
 .prev-button,
 .next-button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 25px;
     width: 25px;
     height: 25px;
-    background-color: #000000;
-    color: #fff;
+    line-height: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 1;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 .prev-button {
@@ -177,13 +184,13 @@ ul.bootstrap-list {
     padding-left: 0;
 }
 
-ul.bootstrap-list>li {
+ul.bootstrap-list > li {
     position: relative;
     padding-left: 1rem;
     margin-bottom: 0.5em;
 }
 
-ul.bootstrap-list>li:before {
+ul.bootstrap-list > li:before {
     content: ">";
     position: absolute;
     left: 0;
@@ -282,15 +289,15 @@ b {
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    padding: 15px 0 20px 0;
     margin-bottom: 10px;
 }
 
-.portpolio-wrap>div:not(.x-button) {
+.portpolio-wrap > div:not(.x-button) {
     flex: 0 0 40%;
 }
 
-.portpolio-wrap>div:not(.x-button):last-child {
+.portpolio-wrap > div:not(.x-button):last-child {
     flex: 0 0 60%;
 }
 
