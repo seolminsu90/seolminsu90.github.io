@@ -450,9 +450,19 @@ function renderData(data) {
 }
 
 // 템플릿 생성 및 데이터 채워넣기 함수
-function createCareerTemplate(data) {
+function createCareerTemplate(data, idx) {
     const template = document.createElement("div");
     template.className = "career-period";
+
+    addXButton(template, () => {
+        careerTextData.splice(idx, 1);
+        const containers = document.getElementsByClassName("career-period");
+        while (containers.length > 0) {
+            containers[0].parentNode.removeChild(containers[0]);
+        }
+
+        renderCareerData(careerTextData);
+    });
 
     const date = document.createElement("p");
     date.className = "career-period-date";
@@ -477,8 +487,8 @@ function createCareerTemplate(data) {
 function renderCareerData(data) {
     const contentElement = document.getElementsByClassName("career-periods")[0];
 
-    data.forEach((item) => {
-        const template = createCareerTemplate(item);
+    data.forEach((item, idx) => {
+        const template = createCareerTemplate(item, idx);
         contentElement.appendChild(template);
     });
 }
