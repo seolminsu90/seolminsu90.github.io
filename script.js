@@ -1,13 +1,13 @@
 console.log(`Url Parameter [cp, pt, ct, exp]`);
 
 (() => {
-    const mode = getUrlParameter("mode");
+    const mode = getValueFromQuery();
     let career = document.getElementById("ms-career");
     let portpolio = document.getElementById("ms-portpolio");
     let careerText = document.getElementById("ms-career-text");
     let exp = document.getElementById("ms-exp");
 
-    if (mode === "") {
+    if (mode === "" || mode === null) {
         console.log("mo Mode");
         career.style.display = "block";
         portpolio.style.display = "block";
@@ -166,6 +166,18 @@ function printImageMode() {
         prevs[0].parentNode.removeChild(prevs[0]);
     }
 }
+
+function getValueFromQuery() {
+    var queryString = window.location.search.substr(1); // 쿼리 문자열에서 '?' 문자 제거
+    var params = queryString.split('&'); // 매개 변수들을 분리
+  
+    for (var i = 0; i < params.length; i++) {
+      var param = params[i].split('=');
+      return param[0]; // 첫 번째 매개 변수 값 반환
+    }
+  
+    return null; // 매개 변수가 없는 경우
+  }
 
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
