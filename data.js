@@ -281,8 +281,8 @@ var portpolioData = [
     {
         src: ["img/omakorea/hallpass/1.png", "img/omakorea/hallpass/2.png", "img/omakorea/hallpass/3.png"],
         title: "홀패스 SNS 웹/앱 서비스",
-        start: "2022-07-01",
-        end: "2022-12-31",
+        start: "2016-08-01",
+        end: "2017-06-31",
         company: "오엠에이코리아",
         desc: "미국 대상 서비스로 <b>학생들만 전용으로 사용하는 소셜 웹/앱 서비스</b>로, 인스타그램을 모티브로 제작되어 <b>기본적인 소셜 기능</b>을 담고 있고 클라이언트 앱 파트를 제외한 전반적인 개발을 담당함.",
         work: ["웹/앱 백엔드 API", "DB 스키마 및 구조 설계", "관리자 페이지", "AWS (beanstalk, rds, s3, route)", "앱 Push 서버", "학교/학생 랭킹 시스템 (redis)", "구독 및 팔로우 기능"],
