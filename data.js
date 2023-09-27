@@ -29,7 +29,7 @@ var careerData = [
         title: "넷마블네오",
         level: "팀원",
         start: "2022-05-30",
-        end: getCurrentDateText(),
+        end: "2023-10-20"/*getCurrentDateText()*/,
         work: "게임 운영툴, BI 시각화 도구, 기획데이터 DB화 툴 개발. 게임 서버 개발 지원",
         tags: ["java", "spring", "web", "vuejs", "mysql", "Mybatis", "jenkins", ".Net-Core"],
     },
