@@ -27,7 +27,7 @@ var careerData = [
     {
         src: "img/4.jpg",
         title: "넷마블네오",
-        level: "팀원",
+        level: "사원/팀원",
         start: "2022-05-30",
         end: "2023-10-20"/*getCurrentDateText()*/,
         work: "게임 운영툴, BI 시각화 도구, 기획데이터 DB화 툴 개발. 게임 서버 개발 지원",
@@ -36,7 +36,7 @@ var careerData = [
     {
         src: "img/3.png",
         title: "엔픽셀",
-        level: "팀원",
+        level: "사원/팀원",
         start: "2020-03-09",
         end: "2022-05-27",
         work: "게임 운영툴, 번역툴, 로그 수집기, 기획데이터 관리툴, 게임커뮤니티, 알림 서비스 개발 등",
@@ -45,7 +45,7 @@ var careerData = [
     {
         src: "img/2.jpg",
         title: "아이지에스",
-        level: "팀원",
+        level: "사원/팀원",
         start: "2018-10-29",
         end: "2020-02-28",
         work: "커뮤니티 통합 운영 툴, 게시글 크롤러 개발, 기존 커뮤니티 대문 페이지 리뉴얼 등",
@@ -54,7 +54,7 @@ var careerData = [
     {
         src: "img/1.jpg",
         title: "오엠에이코리아",
-        level: "팀장",
+        level: "사원/팀장",
         start: "2014-09-30",
         end: "2018-10-25",
         work: "캐쥬얼 게임 서버 개발, 운영툴, 빌링, 푸시, 인증, 통계 사이트 개발, SNS 및 메신저, 앱/웹 백엔드 개발",
@@ -63,7 +63,7 @@ var careerData = [
     {
         src: "img/5.png",
         title: "네오패드",
-        level: "팀장",
+        level: "사원/팀장",
         start: "2013-11-18",
         end: "2014-09-19",
         work: "모바일 홈페이지 빌더 플랫폼 개발, 하이브리드 앱 개발",
