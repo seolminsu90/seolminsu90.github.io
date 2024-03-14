@@ -25,13 +25,22 @@ const skills = {
 // 데이터 설정
 var careerData = [
     {
+        src: "img/6.png",
+        title: "스마일게이트알피지",
+        level: "책임/팀원",
+        start: "2023-10-23",
+        end: getCurrentDateText(),
+        work: "다양한 사내 개발 지원 툴 개발",
+        tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", "gateway", "Electron"],
+    },
+    {
         src: "img/4.jpg",
         title: "넷마블네오",
         level: "사원/팀원",
         start: "2022-05-30",
-        end: "2023-10-20"/*getCurrentDateText()*/,
+        end: "2023-10-20",
         work: "게임 운영툴, BI 시각화 도구, 기획데이터 DB화 툴 개발. 게임 서버 개발 지원",
-        tags: ["java", "spring", "web", "vuejs", "mysql", "Mybatis", "jenkins", ".Net-Core"],
+        tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", ".Net-Core"],
     },
     {
         src: "img/3.png",
@@ -169,7 +178,7 @@ var portpolioData = [
         src: ["img/noimage.jpg"],
         title: "BI 시각화 대시보드",
         start: "2022-12",
-        end: getCurrentDateText(true),
+        end: "2023-10",
         company: "넷마블네오",
         desc: "게임 BI 지표들을 차트로 시각화하고 대시보드를 구성하는 툴로, <b>Tableau나, Kibana, Garapana</b>가 참조되었고 <b>Apexchart</b>를 사용하여 다양한 차트를 구현하고, 개인화된 대시보드 및 여러 데이터를 연동할 수 있도록 개발됨.",
         work: ["웹 프론트엔드", "서비스 DB 설계", "지표 데이터 백엔드 연동"],
@@ -179,7 +188,7 @@ var portpolioData = [
         src: ["img/games/j.jpg"],
         title: "제2의나라 게임 운영툴",
         start: "2022-05",
-        end: getCurrentDateText(true),
+        end: "2023-10",
         company: "넷마블네오",
         desc: "<b>제2의 나라</b> 운영툴의 국내 및 글로벌 환경의 백엔드 및 프론트엔드 개발을 담당함.",
         work: ["백엔드 API 및 프론트엔드", "DB 설계", "게임 서버 API 연동", "CI/CD"],
