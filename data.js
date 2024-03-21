@@ -88,7 +88,8 @@ var careerTextData = [
             "<b>스마일게이트알피지 </b>입사",
             "업무 현황 대시보드 개발",
             "빌드 관리 및 트리거 툴 개발",
-            "디바이스 관리 툴 개발"
+            "디바이스 관리 툴 개발",
+            "Window Electron App 개발",
             "Jenkins 이용한 CI/CD 구축"
         ],
     },
