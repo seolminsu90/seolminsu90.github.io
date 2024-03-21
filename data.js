@@ -95,7 +95,7 @@ var careerTextData = [
     },
     {
         start: "2022-05",
-        end: "2023-10,
+        end: "2023-10",
         content: [
             "<b>넷마블 네오 </b>입사",
             "제 2 의나라 게임 운영툴 개발",
