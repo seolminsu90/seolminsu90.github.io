@@ -30,7 +30,7 @@ var careerData = [
         level: "책임/팀원",
         start: "2023-10-23",
         end: getCurrentDateText(),
-        work: "다양한 사내 개발 지원 툴 개발",
+        work: "다양한 사내 개발 지원 툴 개발(업무현황, 내부리소스관리, 빌드관리 등)",
         tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", "gateway", "Electron"],
     },
     {
@@ -186,6 +186,16 @@ var careerTextData = [
 ];
 
 var portpolioData = [
+    {
+        src: ["img/noimage.jpg"],
+        title: "개발실 지원 내부 툴 개발",
+        start: "2023-10",
+        end: getCurrentDateText(true),
+        company: "스마일게이트알피지",
+        desc: "디바이스 관리툴, CICD 및 빌드 관리툴, 내부 업무현황 대시보드 등 개발실 내의 니즈를 충족하는 다양한 웹 툴 개발.",
+        work: ["웹 백엔드 및 프론트엔드 개발", "서비스 DB 설계", "Wiki연동"],
+        tag: ["Java/Spring", "Vuejs", "Nodejs", "Mysql", "Jenkins"],
+    },
     {
         src: ["img/noimage.jpg"],
         title: "BI 시각화 대시보드",
