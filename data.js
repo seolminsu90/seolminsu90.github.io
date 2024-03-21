@@ -82,8 +82,19 @@ var careerData = [
 
 var careerTextData = [
     {
-        start: "2022-05",
+        start: "2023-10",
         end: getCurrentDateText(true),
+        content: [
+            "<b>스마일게이트알피지 </b>입사",
+            "업무 현황 대시보드 개발",
+            "빌드 관리 및 트리거 툴 개발",
+            "디바이스 관리 툴 개발"
+            "Jenkins 이용한 CI/CD 구축"
+        ],
+    },
+    {
+        start: "2022-05",
+        end: "2023-10,
         content: [
             "<b>넷마블 네오 </b>입사",
             "제 2 의나라 게임 운영툴 개발",
@@ -92,6 +103,7 @@ var careerTextData = [
             "기획데이터 관리 툴 개발",
             "BI 데이터 시각화 툴 개발",
             "신규 게임 프로젝트 서버 개발 지원",
+            "Jenkins 이용한 CI/CD 구축"
         ],
     },
     {
