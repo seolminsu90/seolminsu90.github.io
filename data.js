@@ -30,7 +30,7 @@ var careerData = [
         level: "책임/팀원",
         start: "2023-10-23",
         end: getCurrentDateText(),
-        work: "다양한 사내 개발 지원 툴 개발(업무현황, 내부리소스관리, 빌드관리 등)",
+        work: "내부 서비스용 공용 GW/인증/봇 등, 다양한 사내 개발 지원 툴 개발(게임 데이터 버전 관리, 업무현황 관리/통계 툴, 오토 테스트 빌더/통계 뷰어, 디바이스 관리 툴, 빌드관리툴 등)",
         tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", "gateway", "Electron"],
     },
     {
