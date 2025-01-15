@@ -30,7 +30,7 @@ var careerData = [
         level: "책임/팀원",
         start: "2023-10-23",
         end: getCurrentDateText(),
-        work: "내부 서비스용 공용 GW/인증/봇 등, 다양한 사내 개발 지원 툴 개발(게임 데이터 버전 관리, 업무현황 관리/통계 툴, 오토 테스트 빌더/통계 뷰어, 디바이스 관리 툴, 빌드관리툴 등)",
+        work: "내부 서비스용 공용 GW/인증/봇 등, 다양한 사내 개발 지원 툴 개발(게임 데이터 버전 관리, 인하우스 앱 다운로드 센터, 업무현황 관리/통계 툴, 오토 테스트 빌더/통계 뷰어, 디바이스 관리 툴, 빌드관리툴 등)",
         tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", "gateway", "Electron"],
     },
     {
@@ -198,7 +198,7 @@ var portpolioData = [
         company: "스마일게이트알피지",
         desc: "내부 앱 다운로드 센터, 오토테스트 빌드/모니터/통계 툴, 게임 데이터 버전 관리 툴, 디바이스 관리툴, CICD 및 빌드 관리툴, 내부 업무현황 대시보드 등 개발실 내의 니즈를 충족하는 다양한 웹 툴 개발.",
         work: ["웹 백엔드 및 프론트엔드 개발", "서비스 DB 설계", "Wiki연동"],
-        tag: ["Java/Spring", "Vuejs", "Nodejs", "Mysql", "Jenkins"],
+        tag: ["Java", "Spring Boot", "Vuejs", "Nodejs", "Mysql", "Jenkins"],
     },
     {
         src: ["img/noimage.jpg"],
