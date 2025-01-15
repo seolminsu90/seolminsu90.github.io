@@ -31,7 +31,7 @@ var careerData = [
         start: "2023-10-23",
         end: getCurrentDateText(),
         work: "내부 서비스용 공용 GW/인증/봇 등, 다양한 사내 개발 지원 툴 개발(게임 데이터 버전 관리, 인하우스 앱 다운로드 센터, 업무현황 관리/통계 툴, 오토 테스트 빌더/통계 뷰어, 디바이스 관리 툴, 빌드관리툴 등)",
-        tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", "gateway", "Electron"],
+        tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", "gateway", "Electron", "Docker"],
     },
     {
         src: "img/4.jpg",
@@ -40,7 +40,7 @@ var careerData = [
         start: "2022-05-30",
         end: "2023-10-20",
         work: "게임 운영툴, BI 시각화 도구, 기획데이터 DB화 툴 개발. 게임 서버 개발 지원",
-        tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", ".Net-Core"],
+        tags: ["java", "spring", "web", "vuejs", "mysql", "jenkins", ".Net-Core", "Docker"],
     },
     {
         src: "img/3.png",
